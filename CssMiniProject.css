@@ -1,7 +1,9 @@
+
 body {
     background-color: lightgray;
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 img {
@@ -24,6 +26,7 @@ img {
     position: absolute;
     top: 50%;
     left: 20%;
+    font-size: xx-large;
     transform: translate(-50%, -50%);
 }
 
@@ -53,6 +56,11 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    
+    /*This needs fixing*/
+    /*position: -webkit-sticky; 
+    position: sticky;
+    top: 0;*/
 }
 
 li {
@@ -67,6 +75,10 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+li a:hover:not(.active) {
     background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
 }
