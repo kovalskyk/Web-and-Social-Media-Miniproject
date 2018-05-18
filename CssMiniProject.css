@@ -5,18 +5,18 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.midtext {
+.content {
+    max-width: 50%;
     text-align: center;
+    margin: auto;
 }
 
 img {
-    /*display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;*/
-    max-width: 100%;
+    /*max-width: 100%;
     max-height: 100vh;
-    height: auto;
+    height: auto;*/
+    width: 100%;
+    height: 40%;
 }
 
 .container {
@@ -32,25 +32,6 @@ img {
     font-size: xx-large;
     transform: translate(-50%, -50%);
 }
-/*Green Buttons
-.btn-group .button {
-    background-color: green;
-    border: 1px solid black;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    width: 150px;
-    display: block;
-}
-
-.btn-group .button:hover {
-    background-color: darkgreen;
-    /*box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);*/
-
 /*NAVIGATION BAR*/
 ul {
     list-style-type: none;
@@ -58,11 +39,6 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    
-    /*This needs fixing*/
-    /*position: -webkit-sticky; 
-    position: sticky;
-    top: 0;*/
 }
 
 li {
@@ -82,7 +58,7 @@ li a:hover:not(.active) {
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: rgb(63, 109, 45);
 }
 
 /*Signup Form*/
@@ -92,7 +68,6 @@ input[type=text], input[type=password] {
     margin: 5px 0 22px 0;
     display: inline-block;
     border: none;
-    background: #f1f1f1;
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -145,9 +120,43 @@ button:hover {
     display: table;
 }
 
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-       width: 100%;
-    }
+
+/*Dropdown menu*/
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
