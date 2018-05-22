@@ -6,6 +6,12 @@
 </head>
 
 <body>
+    <div class="container">
+        <img src="banner.jpg" alt="Banner">
+        <div class="left">World of Warcraft
+            <br> Guild Forum</div>
+    </div>
+
     <ul>
         <li>
             <a href="HomePage.html">HOME</a>
@@ -27,26 +33,22 @@
         </li>
     </ul>
 
-    <div class="container">
-        <img src="banner.jpg" alt="Banner">
-        <div class="left">World of Warcraft
-            <br> Guild Forum</div>
-    </div>
-
+   
     <div class="content">
+            <h2>Login here</h2>
     <form>
-        Username:
-        <br>
-        <input type="text" name="username" required>
-        <br> Password:
-        <br>
-        <input type="password" name="psw" required>
-        <br>
-        <input type="submit" value="Login">
+        <label for="username">
+            <b>Username</b>
+        </label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+        <label for="psw">
+                <b>Password</b>
+            </label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+       
+        <button type="submit" class="submitbtn" value="Login"> Login
     </form>
 </div>
-
-
 </body>
 
 </html>
