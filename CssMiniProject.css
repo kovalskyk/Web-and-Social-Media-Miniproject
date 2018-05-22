@@ -32,6 +32,12 @@ img {
     font-size: xx-large;
     transform: translate(-50%, -50%);
 }
+
+.right {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+}
 /*NAVIGATION BAR*/
 ul {
     list-style-type: none;
