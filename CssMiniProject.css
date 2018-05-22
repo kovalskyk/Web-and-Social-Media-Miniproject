@@ -91,17 +91,6 @@ button {
     cursor: pointer;
     width: 150px;
 }
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: #b83127;
-}
-
-.cancelbtn:hover {
-    background-color: #ec4034;
-}
-
 .signupbtn:hover {
     background-color: rgb(90, 156, 64);
 }
