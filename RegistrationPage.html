@@ -4,29 +4,29 @@
     <link rel="stylesheet" href="CssMiniProject.css">
     <title>Register</title>
     <script>
-            function startTime() {
-                var today = new Date();
-                var h = today.getHours();
-                var m = today.getMinutes();
-                m = checkTime(m);
-                document.getElementById('txt').innerHTML =
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            m = checkTime(m);
+            document.getElementById('txt').innerHTML =
                 h + ":" + m;
-                var t = setTimeout(startTime, 500);
-            }
-            function checkTime(i) {
-                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-                return i;
-            }
-            </script>
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
 </head>
 
 <body onload="startTime()">
-    
+
     <div class="container">
         <img src="banner.jpg" alt="Banner">
         <div class="left">World of Warcraft
             <br> Guild Forum</div>
-            <div id="txt" class="right"></div>
+        <div id="txt" class="right"></div>
     </div>
 
     <ul>
@@ -51,37 +51,37 @@
     </ul>
 
     <div class="content">
-    <form action="/action_page.php" style="border:1px solid #ccc">
-        <div class="regcontainer">
-            <h1>Register</h1>
-            <p>Fill out the form below to create your account.</p>
+        <form action="/action_page.php" style="border:1px solid #ccc">
+            <div class="regcontainer">
+                <h1>Register</h1>
+                <p>Fill out the form below to create your account.</p>
 
-            <label for="email">
-                <b>Email</b>
-            </label>
-            <input type="text" placeholder="Enter Email" name="email" required>
+                <label for="email">
+                    <b>Email</b>
+                </label>
+                <input type="text" placeholder="Enter Email" name="email" required>
 
-            <label for="psw">
-                <b>Password</b>
-            </label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="psw">
+                    <b>Password</b>
+                </label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
 
-            <label for="psw-repeat">
-                <b>Repeat Password</b>
-            </label>
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <label for="psw-repeat">
+                    <b>Repeat Password</b>
+                </label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
-            <label>
-                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-            </label>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
 
-            <div class="clearfix">
-                <button type="button" class="cancelbtn">Cancel</button>
-                <button type="submit" class="signupbtn">Sign Up</button>
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
             </div>
-        </div>
-    </form>
-</div>
+        </form>
+    </div>
 
 </body>
 

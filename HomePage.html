@@ -4,20 +4,20 @@
   <link rel="stylesheet" href="CssMiniProject.css">
   <title>WoW Guild Forum</title>
   <script>
-      function startTime() {
-          var today = new Date();
-          var h = today.getHours();
-          var m = today.getMinutes();
-          m = checkTime(m);
-          document.getElementById('txt').innerHTML =
-          h + ":" + m;
-          var t = setTimeout(startTime, 500);
-      }
-      function checkTime(i) {
-          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-          return i;
-      }
-      </script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      m = checkTime(m);
+      document.getElementById('txt').innerHTML =
+        h + ":" + m;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+      return i;
+    }
+  </script>
 </head>
 
 <body onload="startTime()">
@@ -25,10 +25,10 @@
     <img src="banner.jpg" alt="Banner">
     <div class="left">World of Warcraft
       <br> Guild Forum</div>
-      <div id="txt" class="right"></div>
+    <div id="txt" class="right"></div>
   </div>
 
-  
+
   <ul>
     <li>
       <a class="active" href="HomePage.html">HOME</a>
@@ -49,7 +49,7 @@
       <a href="RegistrationPage.html">REGISTER</a>
     </li>
   </ul>
-  
+
 
 </body>
 

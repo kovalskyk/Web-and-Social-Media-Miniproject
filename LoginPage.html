@@ -4,20 +4,20 @@
     <link rel="stylesheet" href="CssMiniProject.css">
     <title>Login</title>
     <script>
-            function startTime() {
-                var today = new Date();
-                var h = today.getHours();
-                var m = today.getMinutes();
-                m = checkTime(m);
-                document.getElementById('txt').innerHTML =
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            m = checkTime(m);
+            document.getElementById('txt').innerHTML =
                 h + ":" + m;
-                var t = setTimeout(startTime, 500);
-            }
-            function checkTime(i) {
-                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-                return i;
-            }
-            </script>
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
 </head>
 
 <body onload="startTime()">
@@ -25,7 +25,7 @@
         <img src="banner.jpg" alt="Banner">
         <div class="left">World of Warcraft
             <br> Guild Forum</div>
-            <div id="txt" class="right"></div>
+        <div id="txt" class="right"></div>
     </div>
 
     <ul>
@@ -49,22 +49,22 @@
         </li>
     </ul>
 
-   
+
     <div class="content">
-            <h2>Login here</h2>
-    <form>
-        <label for="username">
-            <b>Username</b>
-        </label>
-        <input type="text" placeholder="Enter Username" name="username" required>
-        <label for="psw">
+        <h2>Login here</h2>
+        <form>
+            <label for="username">
+                <b>Username</b>
+            </label>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <label for="psw">
                 <b>Password</b>
             </label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-       
-        <button type="submit" class="submitbtn" value="Login"> Login
-    </form>
-</div>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="submitbtn" value="Login"> Login
+        </form>
+    </div>
 </body>
 
 </html>

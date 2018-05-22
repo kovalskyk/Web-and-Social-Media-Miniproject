@@ -4,30 +4,30 @@
     <link rel="stylesheet" href="CssMiniProject.css">
     <title>Create Topic</title>
     <script>
-            function startTime() {
-                var today = new Date();
-                var h = today.getHours();
-                var m = today.getMinutes();
-                m = checkTime(m);
-                document.getElementById('txt').innerHTML =
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            m = checkTime(m);
+            document.getElementById('txt').innerHTML =
                 h + ":" + m;
-                var t = setTimeout(startTime, 500);
-            }
-            function checkTime(i) {
-                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-                return i;
-            }
-            </script>
+            var t = setTimeout(startTime, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
 </head>
 
 <body onload="startTime()">
-    
+
 
     <div class="container">
         <img src="banner.jpg" alt="Banner">
         <div class="left">World of Warcraft
             <br> Guild Forum</div>
-            <div id="txt" class="right"></div>
+        <div id="txt" class="right"></div>
     </div>
 
     <ul>
@@ -52,14 +52,14 @@
     </ul>
 
     <div class="content">
-    <h2>Create a new topic</h2>
+        <h2>Create a new topic</h2>
 
-    <form action="formpage">
-        <textarea name="topic" style="width: 600px; height: 300px"></textarea>
-        <br>
-        <button type="submit" class="submitbtn" value="Submit"> Submit
-    </form>
-</div>
+        <form action="formpage">
+            <textarea name="topic" style="width: 600px; height: 300px"></textarea>
+            <br>
+            <button type="submit" class="submitbtn" value="Submit"> Submit
+        </form>
+    </div>
 </body>
 
 </html>
